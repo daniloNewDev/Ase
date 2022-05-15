@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    #1e80c1,
+    #d8ecee,
+    #a5def2,
+    #1e80c1,
+    rgb(21, 93, 141),
+    #1e80c1
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 300px;
+  height: 350px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px #184664, -3px -3px 10px #1846645b;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.301) inset;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom right,
+    #27314e,
+    #374875,
+    #1846645b,
+    #53628a
+  );
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.logo:hover {
+  width: 700px;
+  height: 500px;
+}
+.logo > .imagem {
+  border-radius: 30px;
+}
+
+.imagem {
+  width: 300px;
+  height: 350px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.301) inset;
+}
+
+.usuario {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 150px;
+}
+
+.userdata > input {
+  width: 250px;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 20px;
+  color: #102e42;
+  padding-left: 10px;
+  background-color: #a5def2;
+}
+.btn {
+  width: 250px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn > button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to bottom right, #1e80c1, #a5def2);
+  color: #102e42;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #a5def2;
+  margin-left: 145px;
+}
+.video {
+  color: #d8ecee;
+  display: block;
+
+  width: 400px;
+  height: 450px;
+  text-align: center;
+  transition: 1s;
+  margin-top: 20px;
+}
+.video > video {
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+}
+.video > p {
+  width: 300px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 705px) {
+  .logo:hover {
+    width: 300px;
+    height: 500px;
+  }
+  .video {
+    display: none;
+  }
+}
+@media screen and (max-height: 365px) {
+  .logo {
+    width: 300px;
+    height: 350px;
+  }
+  .logo:hover {
+    width: 600px;
+    height: 350px;
+  }
+  .usuario {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+  .userdata {
+    margin: 40px 5px;
+  }
+  .video {
+    display: none;
+  }
+  .usuario > input {
+    width: 200px;
+    height: 25px;
+  }
+}
