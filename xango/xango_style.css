@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo Black", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    #793f11,
+    #a36b20,
+    #a74d15,
+    #5c290a,
+    #461d08
+  );
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  width: 80vw;
+  height: 100px;
+  background: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px 40px rgba(73, 11, 11, 0.4) inset;
+}
+header > p {
+  margin-left: 15%;
+  font-weight: 300;
+  color: #d6c9c7;
+}
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5em;
+  margin-left: 20%;
+  color: #d6c9c7;
+}
+.container {
+  width: 80vw;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+/*  Início da list-settings */
+#list-settings {
+  width: 30vw;
+  height: 526px;
+  margin-top: 15px;
+  background: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px 15px rgba(73, 11, 11, 0.719) inset;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 4em;
+  color: #ccc2c0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 20px;
+}
+/*                  drop-init*/
+.drop {
+  position: relative;
+  display: flex;
+}
+.drop > .icon > i {
+  font-size: 2.5em;
+  margin-left: 25px;
+  color: #afa5a4;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #461d0865;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  width: 150px;
+  box-shadow: -1px -1px 10px #5c290a, 1px 1px 10px #5c290a;
+  padding: 0 10px;
+  border-radius: 15px;
+  z-index: 1;
+  margin: 60px 35px;
+  transition: 1s;
+}
+.drop:hover .drop-content {
+  display: block;
+}
+.drop-content > ul {
+  list-style-type: none;
+}
+.drop-content > ul > li {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.drop-content > ul > li:hover {
+  background-color: #993016;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #5c290a;
+}
+.drop-content > ul > li > a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #b9aba9;
+}
+.drop-content > ul {
+  list-style-type: none;
+}
+
+/*  Fim da list-settings  */
+.central {
+  width: 400px;
+  height: auto;
+  margin-top: 15px;
+  background-image: url(./xango\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px 40px rgba(73, 11, 11, 0.719) inset;
+}
+/*          @media*/
+@media screen and (max-width: 650px) {
+  .container {
+    width: 98vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header {
+    display: none;
+  }
+  #list-settings {
+    width: 90vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500;
+    box-sizing: border-box;
+  }
+  h2 {
+    margin: 10px;
+  }
+  .drop > .icon > i {
+    margin: 20px;
+  }
+
+  .drop-content {
+    margin: 100px -70px;
+    background-color: #610404;
+  }
+  .central {
+    width: 90vw;
+    height: 600px;
+  }
+}
