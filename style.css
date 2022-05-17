@@ -92,8 +92,18 @@
   color: #102e42;
   font-weight: 600;
 }
+.btn > button > a {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to bottom right, #1e80c1, #a5def2);
+  color: #102e42;
+  font-weight: 600;
+  text-decoration: none;
+}
 
-a {
+.userdata > a {
   text-decoration: none;
   color: #a5def2;
   margin-left: 145px;
