@@ -154,6 +154,30 @@ h1 {
   align-items: center;
   overflow: hidden;
 }
+/*    início do footer    */
+footer {
+  width: 80vw;
+  height: 100px;
+  background-image: linear-gradient(
+    to bottom right,
+    #504e54,
+    #303030,
+    #202020,
+    #202020,
+    #202020
+  );
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+}
+footer > h3 {
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 @media screen and (max-width: 1000px) {
   header {
@@ -167,7 +191,6 @@ h1 {
     left: 10vw;
   }
   .icons {
-    width: 30vw;
     top: 20vh;
     left: 14vw;
   }
@@ -187,11 +210,15 @@ h1 {
     left: 2vw;
   }
   .icons {
-    width: 30vw;
     top: 5vh;
     left: 5vw;
   }
   .icons:hover {
     width: 250px;
+  }
+  footer {
+    width: 92vw;
+    bottom: 3vh;
+    border-radius: 10px;
   }
 }
